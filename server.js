@@ -607,6 +607,7 @@ app.get('/api/read/:field/:value', function(req, res) {
 	}
 });
 
+/*
 //----------------------------create by api----------------------------------------------
 app.post('/api/create', function(req, res) {
 	var criteria = {"name" : req.body.name};
@@ -653,7 +654,7 @@ function APIcreate(db, owner, name, borough, cuisine, street, building, zipcode,
 		callback(result);
 	});
 }
-
+*/
 function findOneRestaurant(db, criteria, callback) {
 	db.collection('res').findOne(criteria, function(err, result) {
 		assert.equal(err, null);
