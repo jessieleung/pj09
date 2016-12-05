@@ -662,6 +662,4 @@ function findOneRestaurant(db, criteria, callback) {
 	});
 }
 
-app.listen(8099, function() {
-	console.log('The server is waiting for request');
-});
+app.listen(process.env.PORT || 8099);

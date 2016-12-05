@@ -6,8 +6,8 @@ var assert = require('assert');
 
 var MongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectID;
-//var mongourl = 'mongodb://asstudentnumber1:password123@ds119598.mlab.com:19598/comps381fproject';
-var mongourl = 'mongodb://localhost:27017/test';
+var mongourl = 'mongodb://jessieleung:aa1234@ds159767.mlab.com:59767/pj';
+//var mongourl = 'mongodb://localhost:27017/test';
 
 
 var session = require('cookie-session');
@@ -607,6 +607,7 @@ app.get('/api/read/:field/:value', function(req, res) {
 	}
 });
 
+/*
 //----------------------------create by api----------------------------------------------
 app.post('/api/create', function(req, res) {
 	var criteria = {"name" : req.body.name};
@@ -653,7 +654,7 @@ function APIcreate(db, owner, name, borough, cuisine, street, building, zipcode,
 		callback(result);
 	});
 }
-
+*/
 function findOneRestaurant(db, criteria, callback) {
 	db.collection('res').findOne(criteria, function(err, result) {
 		assert.equal(err, null);

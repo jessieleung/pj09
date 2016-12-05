@@ -14,7 +14,9 @@
     "start": "node server.js"
   },
   "engine": "*",
-  
+  "devDependencies": {
+    "debug": "^2.3.3"
+  }
 }
 
 
